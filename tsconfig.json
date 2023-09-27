@@ -1,0 +1,13 @@
+{
+    "extends": "@tsconfig/node16",
+    "ts-node": {
+        "files": true
+    },
+    "compilerOptions": {
+        "module": "Node16",
+        "resolveJsonModule": true
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
