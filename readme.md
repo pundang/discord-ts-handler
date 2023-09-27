@@ -6,10 +6,12 @@ So... yeah, i made a basic discord.js handler in TS
 
 1. Create a `config.json` file with the following properties
 
-`{
+```
+{
 	"token": "your token",
 	"clientId": "your client id"
-}`
+}
+```
 
 2. Launch your bot by running `npm run start` or `yarn start`
 
