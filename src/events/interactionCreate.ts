@@ -1,4 +1,4 @@
-import type { BaseInteraction, ChatInputCommandInteraction } from "discord.js";
+import type { ChatInputCommandInteraction } from "discord.js";
 import type { newClient } from "../lib/classes";
 
 export default {
