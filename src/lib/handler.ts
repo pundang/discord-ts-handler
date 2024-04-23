@@ -54,17 +54,7 @@ export default class Handler {
 
 		eventFiles.forEach(file => {
 			const filePath = path.join(eventsPath, file)
-			const event = require(filePath).default
-
-			try {
-				if (event.once) {
-					this.client.once(event.name, (...args) => event.execute(...args))
-				} else {
-					this.client.on(event.name, (...args) => event.execute(...args))
-				}
-			} catch (e: unknown) {
-				console.error(`Error in file ${file}: ${e}`)
-			}
+			require(filePath).default
 		})
 	}
 }

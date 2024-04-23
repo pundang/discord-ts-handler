@@ -17,3 +17,5 @@ handler.retrieveEvents()
 handler.publishCommands()
 
 client.login(token)
+
+export { client }

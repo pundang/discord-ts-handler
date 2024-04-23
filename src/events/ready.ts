@@ -1,9 +1,5 @@
-import type { Client } from "discord.js"
+import { client } from "../.."
 
-export default {
-	name: "ready",
-	once: true,
-	async execute(client: Client) {
-		console.log(`Logged in as ${client.user?.username}`)
-	}
-}
+client.once("ready", client => {
+	console.log(`Logged in as ${client.user.username}`)
+})

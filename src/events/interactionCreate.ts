@@ -1,18 +1,14 @@
-import type { ChatInputCommandInteraction } from "discord.js";
-import type { newClient } from "../lib/classes";
+import { newClient } from "../lib/classes";
+import { client } from "../..";
 
-export default {
-	name: "interactionCreate",
-	once: false,
-	async execute(interaction: ChatInputCommandInteraction) {
-		if (!interaction.isChatInputCommand()) return
+client.on("interactionCreate", async interaction => {
+	if (!interaction.isChatInputCommand()) return
 
-		const client = interaction.client as newClient
+	const client = interaction.client as newClient
 
-		const command = client.commands?.get(interaction.commandName)
+	const command = client.commands?.get(interaction.commandName)
 
-		if (!command) throw new Error(`Command ${command} wasn't found or registered`)
+	if (!command) throw new Error(`Command ${command} wasn't found or registered`)
 
-		await command.execute(interaction)
-	}
-}
+	await command.execute(interaction)
+})
