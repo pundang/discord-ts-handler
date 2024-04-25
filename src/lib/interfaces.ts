@@ -1,4 +1,4 @@
-import { ApplicationCommandType, Client, Message } from "discord.js"
+import { ApplicationCommandOptionType, ApplicationCommandType, Client, Message } from "discord.js"
 
 interface command {
 	name: string
@@ -11,7 +11,7 @@ interface command {
 interface options {
 	name: string
 	description: string
-	type: ApplicationCommandType
+	type: ApplicationCommandOptionType
 	required?: boolean
 }
 
