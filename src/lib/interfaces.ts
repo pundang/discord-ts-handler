@@ -13,6 +13,13 @@ interface options {
 	description: string
 	type: ApplicationCommandOptionType
 	required?: boolean
+	options?: subcommand_options[]
+}
+
+interface subcommand_options {
+	name: string
+	description: string
+	type: ApplicationCommandOptionType
 }
 
 export default command
