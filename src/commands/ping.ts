@@ -1,10 +1,13 @@
-import { SlashCommandBuilder, Message } from "discord.js";
+import { ApplicationCommandType } from "discord.js"
+import command from "../lib/interfaces"
 
-export default {
-	data: new SlashCommandBuilder()
-		.setName("ping")
-		.setDescription("Replies to ping"),
-	async execute(interaction: Message) {
-		interaction.reply("Pong")
+const cmd: command = {
+	name: "ping",
+	description: "Replies to ping",
+	type: ApplicationCommandType.ChatInput,
+	run: (client, interaction, args) => {
+		interaction.reply("Pong!")
 	}
 }
+
+export default cmd
