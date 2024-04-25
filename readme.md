@@ -14,8 +14,7 @@ CLIENT_ID=CLIENTID
 2. Launch your bot by running `npm run start` or `yarn start`
 
 ### Notes
-* Create your commands in `/src/commands`
-* Create your events in `/src/events`
+* I recommend you to read the help files located in the [docs](/docs/) folder
 * All your commands are registered every time you run the bot
 * I like you :flushed:
 
