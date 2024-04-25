@@ -1,11 +1,11 @@
-import { ApplicationCommandOptionType, ApplicationCommandType, Client, Message } from "discord.js"
+import { ApplicationCommandOptionType, ApplicationCommandType, Client, CommandInteraction } from "discord.js"
 
 interface command {
 	name: string
 	description: string
 	type: ApplicationCommandType
 	options?: options[]
-	run: (client: Client, interaction: Message, args: any[]) => void
+	run: (client: Client, interaction: CommandInteraction, args: any[]) => void
 }
 
 interface options {
