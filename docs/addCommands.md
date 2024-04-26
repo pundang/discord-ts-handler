@@ -43,7 +43,12 @@ const cmd: command = {
 		required: true
 	}]
 	run: (client, interaction, args) => {
-		interaction.reply("Pong!")
+		// args is an array of subcommands & arguments used when executing the commands
+		if (args[0] === true) {
+			interaction.reply("Pong!")
+		} else {
+			interaction.reply({ content: "I'm not allowed to reply to this", ephemeral: true })
+		}
 	}
 }
 
