@@ -1,0 +1,13 @@
+{
+  "name": "discord-ts-handler",
+  "scripts": {
+    "start": "tsx index.ts"
+  },
+  "author": "pundang",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.7",
+    "tsx": "^4.19.2"
+  }
+}

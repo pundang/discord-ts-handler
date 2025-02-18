@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"lib": [
+			"ES2023"
+		],
+		"module": "Node16",
+		"target": "ES2022",
+		"strict": true,
+		"moduleResolution": "node16"
+	},
+	"exclude": [
+		"node_modules"
+	]
+}
