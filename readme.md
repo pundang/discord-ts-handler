@@ -13,8 +13,6 @@ Follow these simple steps to get your bot running.
 
 
 ```bash
-# very important step
-
 git clone https://github.com/pundang/discord-ts-handler.git
 
 cd ./discord-ts-handler
